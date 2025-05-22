@@ -2,4 +2,4 @@
 *.log
 
 webapp/demo-webapp/*
-webapp/demo-webapp/*
+api/demo-webapp/*

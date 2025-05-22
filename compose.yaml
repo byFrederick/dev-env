@@ -1,9 +1,15 @@
 name: dev-env
 services:
-  # api:
-  #   build:
-  #     context: ./api
-  #     dockerfile: Dockerfile
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - 3001:3001
+    volumes:
+      - ./api/demo-api:/usr/src/app
+      - api_node_modules:/usr/src/app/node_modules
+
   webapp:
     build:
       context: ./webapp
@@ -15,4 +21,5 @@ services:
       - webapp_node_modules:/usr/src/app/node_modules
 
 volumes:
-  webapp_node_modules:
+  webapp_node_modules: 
+  api_node_modules:

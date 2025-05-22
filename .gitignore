@@ -1,0 +1,5 @@
+.env
+*.log
+
+webapp/demo-webapp/*
+webapp/demo-webapp/*

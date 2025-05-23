@@ -41,5 +41,9 @@ services:
 volumes:
   webapp_node_modules: 
   api_node_modules:
+
+  # This an external volume, it is created by the startup.sh script. This is to persist the data even if compose takes down the volumes it creates. 
   db_data:
+    external: true
+    name: dev-env_db_data
 

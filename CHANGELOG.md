@@ -2,7 +2,7 @@
 
 ## [Commit: ] - 2025-05-22
 
-- Added [startup.sh](http://startup.sh) script which installs docker and starts the environment
+- Added [startup.sh] script which installs docker and starts the environment
 - Added CHANGELOG.md
 - Changed postgres image tag on docker compose
 

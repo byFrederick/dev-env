@@ -1,6 +1,12 @@
 # CHANGELOG
 
-## [Commit: ] - 2025-05-22
+## [Commit: 736e3f5] - 2025-05-23
+
+- Fixed api Dockerfile base image to use the version given .tool-versions file
+- DB volume configured as external volume
+- Fixed [startup.sh](http://startup.sh) script to send stderr to /dev/null and added the creation of db volume
+
+## [Commit: 37d3d1f] - 2025-05-22
 
 - Added [startup.sh] script which installs docker and starts the environment
 - Added CHANGELOG.md

@@ -1,8 +1,5 @@
 .env
 *.log
 
-webapp/demo-webapp/
-api/demo-webapp/
-
-webapp/demo-webapp/*
-api/demo-webapp/*
+/services/webapp/demo-webapp/
+/services/api/demo-api/

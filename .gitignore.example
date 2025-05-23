@@ -1,0 +1,5 @@
+.env
+*.log
+
+/services/webapp/demo-webapp
+/services/api/demo-webapp

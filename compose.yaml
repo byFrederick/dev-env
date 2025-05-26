@@ -2,14 +2,14 @@ name: dev-env
 services:
   api:
     build:
-      context: ./services/api
+      context: ./services/api/
       dockerfile: Dockerfile
     ports:
       - ${API_PORT}:${API_PORT}
     env_file:
       - .env
     volumes:
-      - ${API_REPO_PATH}:/usr/src/app
+      - ./services/api/demo-api:/usr/src/app
       - api_node_modules:/usr/src/app/node_modules
   webapp:
     build:
@@ -20,7 +20,7 @@ services:
     env_file:
       - .env
     volumes:
-      - ${WEBAPP_REPO_PATH}:/usr/src/app
+      - ./services/webapp/demo-webapp:/usr/src/app
       - webapp_node_modules:/usr/src/app/node_modules
     depends_on:
       - api

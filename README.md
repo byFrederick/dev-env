@@ -10,7 +10,7 @@
 
 ## Description
 
-Local development environment for the apps: demo-api and demo-webapp.
+Local development environment for the apps: demo-api and demo-webapp built using Docker Compose. You’ve got three services: an API built from services/api exposing its port (default 3001) for the frontend, a frontend app built from services/webapp serving on port 3000, and a PostgreSQL database that loads your init scripts and persists data. They all share the same Docker network, use the .env file for configuration, and keep dependencies and data isolated in named volumes.
 
 ## Setup
 
